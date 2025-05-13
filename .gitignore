@@ -1,0 +1,57 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de compilación
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+[Oo]bj/
+[Mm]emoryCaptures/
+[Uu]serSettings/
+
+
+# Configuraciones personales
+.vscode/
+.idea/
+.vs/
+.vsconfig
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+
+# Archivos generados
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# Archivos de Unity específicos
+*.apk
+*.aab
+*.unitypackage
+*.log
+
+# Archivos de cache de Unity Collaborate
+.collab/
+
+# Carpetas ocultas de sistema o herramientas
+.gradle/
+*.apk
+*.keystore
+
+# Builds
+*.exe
+*.app
+*.dll
+
+# Sistema operativo
+*.swp
+*.lock
+*.sln.docstates
