@@ -14,7 +14,7 @@ public class DebugChangeCard : MonoBehaviour
 
     void OnGUI()
     {
-        if (GUI.Button(new Rect(10,10,100,28), "Hit me!"))
+        if (GUI.Button(new Rect(10,10,100,28), "Cambiar de Carta!"))
         {
 
             if (cardIndex >= cardModel.faces.Length)
