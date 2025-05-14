@@ -2,16 +2,24 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 
-public class Deck : MonoBehaviour
+public class CardStack : MonoBehaviour
 {
     List<int> cards;
 
+    public bool HashCards
+    {
+        get
+        {
+            return cards != null && cards.Count > 0;
+        }
+    }
+
     public IEnumerable<int> GetCards()
     {
-        if (cards == null)
+        /*if (cards == null)
         {
             yield break;
-        }
+        }*/
 
         foreach (int i in cards)
         {
@@ -19,16 +27,21 @@ public class Deck : MonoBehaviour
         }
     }
 
-    public void Shuffle()
+    public int Pop()
     {
-        if (cards == null)
-        {
-            cards = new List<int>(); 
-        }
-        else
-        {
-            cards.Clear();
-        }
+        int temp = cards[0];
+        cards.Remove(0);
+        return temp;
+    }
+
+    public void Push(int card)
+    {
+        cards.Add(card);
+    }
+
+    public void CreateDeck()
+    {
+        cards.Clear();
 
         for (int i = 0; i < 52; i ++)
         {
@@ -47,7 +60,8 @@ public class Deck : MonoBehaviour
     }
     void Awake()
     {
-        Shuffle();
+        cards = new List<int>();
+        CreateDeck();
     }
 
 }
