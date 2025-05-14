@@ -6,6 +6,8 @@ public class CardStack : MonoBehaviour
 {
     List<int> cards;
 
+    public bool isGameDeck;
+
     public bool HashCards
     {
         get
@@ -61,7 +63,11 @@ public class CardStack : MonoBehaviour
     void Awake()
     {
         cards = new List<int>();
-        CreateDeck();
+
+        if (isGameDeck)
+        {
+            CreateDeck();
+        }
     }
 
 }

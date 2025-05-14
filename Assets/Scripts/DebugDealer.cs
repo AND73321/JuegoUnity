@@ -2,17 +2,14 @@ using UnityEngine;
 
 public class DebugDealer : MonoBehaviour
 {
+    public CardStack dealer;
+    public CardStack player;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnGUI()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (GUI.Button(new Rect(10, 10, 256, 28), "Interactuar"))
+        {
+            player.Push(dealer.Pop());
+        }
     }
 }
