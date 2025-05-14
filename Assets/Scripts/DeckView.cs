@@ -27,6 +27,10 @@ public class DeckView : MonoBehaviour
             Vector3 temp = start + new Vector3(co, 0f);
             cardCopy.transform.position = temp;
 
+            CardModel cardModel = cardCopy.GetComponent<CardModel>();
+            cardModel.cardIndex = i;
+            cardModel.ToggleFace(true);
+
             cardCount++;
         }
     }
