@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Deck : MonoBehaviour
 {
-    List<int> cards = new List<int>();
+    List<int> cards;
 
     public IEnumerable<int> GetCards()
     {
@@ -45,7 +45,7 @@ public class Deck : MonoBehaviour
             cards[n] = temporal;
         }
     }
-    void Start()
+    void Awake()
     {
         Shuffle();
     }
