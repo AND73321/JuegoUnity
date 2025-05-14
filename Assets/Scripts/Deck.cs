@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class Deck : MonoBehaviour
 {
-    List<int> cards;
+    List<int> cards = new List<int>();
+
+    public IEnumerable<int> GetCards()
+    {
+        if (cards == null)
+        {
+            yield break;
+        }
+
+        foreach (int i in cards)
+        {
+            yield return i;
+        }
+    }
 
     public void Shuffle()
     {

@@ -19,7 +19,6 @@ Thumbs.db
 .vsconfig
 *.csproj
 *.unityproj
-*.sln
 *.suo
 *.tmp
 *.user
