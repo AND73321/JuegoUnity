@@ -134,11 +134,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6152969429216136271, guid: bb8757fbdf7f9a14fb12b213884dc496, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.02
+      value: -4.34
       objectReference: {fileID: 0}
     - target: {fileID: 6152969429216136271, guid: bb8757fbdf7f9a14fb12b213884dc496, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.01
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: 6152969429216136271, guid: bb8757fbdf7f9a14fb12b213884dc496, type: 3}
       propertyPath: m_LocalPosition.z
@@ -238,8 +238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff72f2aecd98752448a4115e9c4e5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: {x: 0, y: 0, z: 0}
-  cardOffset: 0
+  start: {x: -4, y: 0, z: 0}
+  cardOffset: 0.2
   cardPrefab: {fileID: 190935274}
 --- !u!1 &1948924420
 GameObject:
